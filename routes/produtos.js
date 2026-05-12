@@ -7,7 +7,7 @@ let db = require('../data/database');
 router.get('/erro-teste', (req, res) => {
     // throw new Error() lança um erro intencional.
     // O Express captura e repassa para o middleware de erro (errorHandler.js).
-    throw new Error("O servidor do Haruy Sushi tropeçou!");
+    throw new Error("O servidor da Festa Junina tropeçou!");
 });
 
 
