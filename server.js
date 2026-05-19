@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(logger);
 // Rota de teste
 app.get('/', (req, res) => {
-    res.json({ mensagem: 'Bem-vindo a API da Pastelaria!' });
+    res.json({ mensagem: 'Bem-vindo a API da Festa Junina!' });
 });
 
 // Importando rotas
@@ -26,7 +26,7 @@ app.use('/api/produtos', rotasProdutos);
 app.use('/api/pedidos', rotasPedidos);
 // Tratamento de Rotas não encontradas (Erro 404)
 app.use((req, res, next) => {
-    res.status(404).json({ mensagem: "Rota não encontrada na API da Pastelaria." });
+    res.status(404).json({ mensagem: "Rota não encontrada na API da Festa Junina." });
 });
 // MIDDLEWARE DE ERROS GLOBAL (Sempre no final!)
 app.use(errorHandler);
